@@ -29,5 +29,5 @@ CXX17STD = -std=c++1z
 
 LDFLAGS += %{makevars_ld_flags} -rtlib=compiler-rt -lpthread -ldl # -nostdlib++
 # LDFLAGS += _EXEC_ROOT_/%{toolchain_path_prefix}lib/libc++.a
-# LDFLAGS += _EXEC_ROOT_/%{toolchain_path_prefix}lib/libc++abi.a
+LDFLAGS += _EXEC_ROOT_/%{toolchain_path_prefix}lib/libc++abi.a
 LDFLAGS += _EXEC_ROOT_/%{toolchain_path_prefix}lib/libunwind.a
